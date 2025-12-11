@@ -2,6 +2,12 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/PowerBI-Analytics-orange?logo=powerbi"> <img src="https://img.shields.io/badge/Status-Completed-success"> <img src="https://img.shields.io/badge/Data-Kaggle-blue?logo=kaggle"> <img src="https://img.shields.io/badge/Visualization-DAX%20%26%20PowerQuery-green"> </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1d244d7-7fa8-4584-b88e-0f86d247266f"
+       alt="Telco_Customer_Churn"
+       width="800">
+</p>
+
 ---
 
 ## 📖 Mục lục
@@ -58,7 +64,7 @@ Trình bày báo cáo theo chuẩn BI
 Dataset: **Telco Customer Churn**
 
 📄 File dữ liệu:  
-👉 [Telco_Customer_Churn.csv](./data/Telco_Customer_Churn.csv)
+👉 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 Nguồn: **Kaggle**
 
