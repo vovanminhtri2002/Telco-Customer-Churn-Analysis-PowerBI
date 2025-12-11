@@ -1,35 +1,27 @@
 # 📊 Telco Customer Churn Analysis – Power BI Dashboard
+
 <p align="center"> <img src="https://img.shields.io/badge/PowerBI-Analytics-orange?logo=powerbi"> <img src="https://img.shields.io/badge/Status-Completed-success"> <img src="https://img.shields.io/badge/Data-Kaggle-blue?logo=kaggle"> <img src="https://img.shields.io/badge/Visualization-DAX%20%26%20PowerQuery-green"> </p>
+
+---
 
 ## 📖 Mục lục
 
-✨ Giới thiệu
+- [✨ Giới thiệu](#-giới-thiệu)
+- [📌 Mục tiêu dự án](#-mục-tiêu-dự-án)
+- [📂 Nguồn dữ liệu](#-nguồn-dữ-liệu)
+- [🧠 Quy trình thực hiện](#-quy-trình-thực-hiện)
+- [📊 Tổng quan Dashboard](#-tổng-quan-dashboard)
+- [1️⃣ Home](#1️⃣-home)
+- [2️⃣ Overview Dashboard](#2️⃣-overview-dashboard)
+- [3️⃣ Service Analysis](#3️⃣-service-analysis)
+- [4️⃣ Customer Insights](#4️⃣-customer-insights)
+- [🛠️ Các Measure DAX chính](#-các-measure-dax-chính)
+- [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
+- [🔮 Hướng phát triển](#-hướng-phát-triển)
+- [👨‍💻 Tác giả](#-tác-giả)
+- [📜 License](#-license)
 
-📌 Mục tiêu dự án
-
-📂 Nguồn dữ liệu
-
-🧠 Quy trình thực hiện
-
-📊 Tổng quan Dashboard
-
-1️⃣ Home
-
-2️⃣ Overview Dashboard
-
-3️⃣ Service Analysis
-
-4️⃣ Customer Insights
-
-🛠️ Các Measure DAX chính
-
-📁 Cấu trúc thư mục
-
-🔮 Hướng phát triển
-
-👨‍💻 Tác giả
-
-📜 License
+---
 
 ✨ Giới thiệu
 
