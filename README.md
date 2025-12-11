@@ -106,8 +106,6 @@ Xuất file (.pbix) và lưu repository
 
 ## 📊 Tổng quan Dashboard
 
----
-
 ## 1️⃣ Home
 
 Trang mở đầu bao gồm:
@@ -304,8 +302,6 @@ Công cụ: **Power BI, Power Query, DAX**
 ---
 
 ## 📜 License
-
----
 
 MIT License © 2025
 
