@@ -22,7 +22,7 @@
 - [3️⃣ Service Analysis](#3️⃣-service-analysis)
 - [4️⃣ Customer Insights](#4️⃣-customer-insights)
 - [💡 Insight nổi bật](#-insight-nổi-bật)
-- [🛠️ Các Measure DAX chính](#các-measure-dax-chính)
+- [🛠️ Các Measure DAX chính](#cac-measure-dax-chinh)
 - [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [🔮 Hướng phát triển](#-hướng-phát-triển)
 - [👨‍💻 Tác giả](#-tác-giả)
