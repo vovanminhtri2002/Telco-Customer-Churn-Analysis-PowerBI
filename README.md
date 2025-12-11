@@ -43,7 +43,7 @@ Tìm insight theo độ tuổi, giới tính, hợp đồng, phương thức tha
 
 Tính toán tỷ lệ churn tổng & theo từng phân khúc
 
-Xác định yếu tố rủi ro cao (Internet Service, Contract, Payment, Senior Citizen…)
+Xác định yếu tố rủi ro cao (**Internet Service, Contract, Payment, Senior Citizen…**)
 
 Tạo dashboard 4 trang đầy đủ thông tin
 
@@ -55,11 +55,14 @@ Trình bày báo cáo theo chuẩn BI
 
 ## 📂 Nguồn dữ liệu
 
-Dataset: Telco Customer Churn
+Dataset: **Telco Customer Churn**
 
-Nguồn: Kaggle
+📄 File dữ liệu:  
+👉 [Telco_Customer_Churn.csv](./data/Telco_Customer_Churn.csv)
 
-Định dạng: .csv
+Nguồn: **Kaggle**
+
+Định dạng: **.csv**
 
 Gồm 7043 dòng – 21 cột thông tin khách hàng
 
@@ -121,27 +124,27 @@ Trang tổng quan KPI:
 
 ### 📌 KPI chính (4 Card):
 
-Churn Rate
+**Churn Rate**
 
-Senior Citizen Count
+**Senior Citizen Count**
 
-Partner %
+**Partner %**
 
-Dependent %
+**Dependent %**
 
-Average Tenure
+**Average Tenure**
 
 ### 📌 Biểu đồ:
 
 ---
 
-Churn by Gender
+**Churn by Gender**
 
-Churn by Contract
+**Churn by Contract**
 
-Churn by Senior Citizen
+**Churn by Senior Citizen**
 
-Churn by MonthlyCharges
+**Churn by MonthlyCharges**
 
 Trang này giúp đánh giá tổng quan rủi ro rời bỏ khách hàng.
 
@@ -191,33 +194,48 @@ Giúp đưa ra gợi ý chiến lược giữ chân khách hàng.
 
 ---
 
+```bash
 Customer Count = COUNTROWS(Data)
+```
 
+```bash
 Churn Count =
 CALCULATE(COUNTROWS(Data), Data[Churn] = "Yes")
+```
 
+```bash
 Churn Rate =
 DIVIDE([Churn Count], [Customer Count])
+```
 
+```bash
 Senior Citizen Count =
 CALCULATE(COUNTROWS(Data), Data[SeniorCitizen] = 1)
+```
 
+```bash
 Partner % =
 DIVIDE(
     CALCULATE(COUNTROWS(Data), Data[Partner] = "Yes"),
     [Customer Count]
 )
+```
 
+```bash
 Dependent % =
 DIVIDE(
     CALCULATE(COUNTROWS(Data), Data[Dependents] = "Yes"),
     [Customer Count]
 )
+```
 
+```bash
 Average Tenure = AVERAGE(Data[tenure])
+```
 
 ---
 
+```bash
 ## 📁 Cấu trúc thư mục
 ├── powerbi/
 │   └── Telco_Customer_Churn.pbix
@@ -228,6 +246,7 @@ Average Tenure = AVERAGE(Data[tenure])
 │   ├── Telco.png
 └── documents/
     └── Telco_Customer_Churn_Report.docx
+```
 
 ---
 
@@ -256,5 +275,7 @@ Công cụ: **Power BI, Power Query, DAX**
 ---
 
 ## 📜 License
+
+---
 
 MIT License © 2025
