@@ -22,7 +22,7 @@
 - [3️⃣ Service Analysis](#3️⃣-service-analysis)
 - [4️⃣ Customer Insights](#4️⃣-customer-insights)
 - [💡 Insight nổi bật](#-insight-nổi-bật)
-- [🛠️ Các Measure DAX chính](#-các-measure-dax-chính)
+- [🛠️ Các Measure DAX chính](#các-measure-dax-chính-)
 - [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [🔮 Hướng phát triển](#-hướng-phát-triển)
 - [👨‍💻 Tác giả](#-tác-giả)
@@ -111,15 +111,15 @@ Chủ yếu gồm các trường:
 
 🔨 **2. Tạo các DAX Measure**
 
-- Churn Rate
+- **Churn Rate**
 
-- Senior Citizen Count
+- **Senior Citizen Count**
 
-- Average Tenure
+- **Average Tenure**
 
-- Partner %
+- **Partner %**
 
-- Dependent %
+- **Dependent %**
 
 - Tổng số khách hàng
 
@@ -127,19 +127,19 @@ Chủ yếu gồm các trường:
 
 🎨 **3. Thiết kế Dashboard**
 
-- Card KPI
+- **Card KPI**
 
-- Bar chart, donut chart, line chart
+- **Bar chart, donut chart, line chart**
 
-- Slicer lọc động theo giới tính, hợp đồng, internet service
+- **Slicer lọc động theo giới tính, hợp đồng, internet service**
 
-- Tooltip custom
+- **Tooltip custom**
 
 📤 **4. Xuất file & quản lý repo**
 
 - Lưu file .pbix
 
-- Tách thư mục images, data, documents
+- Tách thư mục **images, data, documents**
 
 ---
 
@@ -147,12 +147,12 @@ Chủ yếu gồm các trường:
 
 Dashboard được chia thành 4 trang:
 
-```bash
-1️⃣ **Home** – Trang giới thiệu và điều hướng
-2️⃣ **Overview Dashboard** – KPI & rủi ro tổng quan
-3️⃣ **Service Analysis** – Phân tích theo dịch vụ sử dụng
+1️⃣ **Home** – Trang giới thiệu và điều hướng <br>
+2️⃣ **Overview Dashboard** – KPI & rủi ro tổng quan <br>
+3️⃣ **Service Analysis** – Phân tích theo dịch vụ sử dụng <br>
 4️⃣ **Customer Insights** – Hành vi & phân khúc khách hàng
-```
+
+---
 
 ## 1️⃣ Home
 
