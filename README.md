@@ -33,9 +33,9 @@ Xác định nhóm khách hàng có nguy cơ rời bỏ cao
 
 Phân tích dịch vụ ảnh hưởng đến churn
 
-Theo dõi KPI tổng quan
+Theo dõi **KPI** tổng quan
 
-Tìm insight theo độ tuổi, giới tính, hợp đồng, phương thức thanh toán,...
+Tìm **insight** theo độ tuổi, giới tính, hợp đồng, phương thức thanh toán,...
 
 ---
 
@@ -47,7 +47,7 @@ Xác định yếu tố rủi ro cao (**Internet Service, Contract, Payment, Sen
 
 Tạo dashboard 4 trang đầy đủ thông tin
 
-Ứng dụng DAX để xây KPI chuyên nghiệp
+Ứng dụng **DAX** để xây **KPI** chuyên nghiệp
 
 Trình bày báo cáo theo chuẩn BI
 
