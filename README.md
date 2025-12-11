@@ -114,7 +114,11 @@ Mô tả dataset
 
 Nút điều hướng sang 3 trang tiếp theo
 
-<img width="628" height="355" alt="Home_Dashboard" src="https://github.com/user-attachments/assets/94acfbbc-9368-4333-88ee-17d235e9ae98" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/94acfbbc-9368-4333-88ee-17d235e9ae98" 
+       alt="Home_Dashboard"
+       width="800">
+</p>
 
 ---
 
