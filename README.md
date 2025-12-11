@@ -37,6 +37,8 @@ Theo dõi KPI tổng quan
 
 Tìm insight theo độ tuổi, giới tính, hợp đồng, phương thức thanh toán,...
 
+---
+
 ## 📌 Mục tiêu dự án
 
 Tính toán tỷ lệ churn tổng & theo từng phân khúc
@@ -49,6 +51,8 @@ Tạo dashboard 4 trang đầy đủ thông tin
 
 Trình bày báo cáo theo chuẩn BI
 
+---
+
 ## 📂 Nguồn dữ liệu
 
 Dataset: Telco Customer Churn
@@ -59,35 +63,42 @@ Nguồn: Kaggle
 
 Gồm 7043 dòng – 21 cột thông tin khách hàng
 
+---
+
 ## 🧠 Quy trình thực hiện
 
-Làm sạch dữ liệu trong Power Query
+Làm sạch dữ liệu trong **Power Query**
 
 Xử lý giá trị null
 
-Định dạng lại dữ liệu (Text / Number / Decimal)
+Định dạng lại dữ liệu (**Text / Number / Decimal**)
 
-Chuyển TotalCharges → kiểu số
+Chuyển **TotalCharges** → kiểu số
 
-Tạo các Measure DAX
+Tạo các **Measure DAX:**
 
-Churn Rate, Retention Rate
+**Churn Rate, Retention Rate**
 
-Senior Citizen Count
+**Senior Citizen Count**
 
-Partner %
+**Partner %**
 
-Dependents %
+**Dependents %**
 
-Average Tenure
+**Average Tenure**
 
 Thiết kế 4 trang báo cáo chuẩn BI
 
-Thêm Tooltip, Slicer, Card KPI
+Thêm **Tooltip, Slicer, Card KPI**
 
 Xuất file (.pbix) và lưu repository
 
+---
+
 ## 📊 Tổng quan Dashboard
+
+---
+
 ## 1️⃣ Home
 
 Trang mở đầu bao gồm:
@@ -100,9 +111,13 @@ Mô tả dataset
 
 Nút điều hướng sang 3 trang tiếp theo
 
+---
+
 ## 2️⃣ Overview Dashboard
 
 Trang tổng quan KPI:
+
+---
 
 ### 📌 KPI chính (4 Card):
 
@@ -118,6 +133,8 @@ Average Tenure
 
 ### 📌 Biểu đồ:
 
+---
+
 Churn by Gender
 
 Churn by Contract
@@ -130,43 +147,50 @@ Trang này giúp đánh giá tổng quan rủi ro rời bỏ khách hàng.
 
 ## 3️⃣ Service Analysis
 
+---
+
 Phân tích sâu các dịch vụ:
 
-Internet Service vs Churn
+**Internet Service vs Churn**
 
-Online Security / Backup / Device Protection
+**Online Security / Backup / Device Protection**
 
-Contract Type
+**Contract Type**
 
-Payment Method
+**Payment Method**
 
 Giúp tìm ra dịch vụ làm khách hàng rời bỏ nhiều nhất.
+
+---
 
 ## 4️⃣ Customer Insights
 
 Phân tích hành vi khách hàng:
 
-Tenure vs Churn
+**Tenure vs Churn**
 
-Age Group
+**Age Group**
 
-Monthly Charges
+**Monthly Charges**
 
-Customer Lifetime Value (CLV)
+**Customer Lifetime Value (CLV)**
 
 Slicer lọc theo:
 
-Contract
+**Contract**
 
-Gender
+**Gender**
 
-Payment
+**Payment**
 
-Internet Service
+**Internet Service**
 
 Giúp đưa ra gợi ý chiến lược giữ chân khách hàng.
 
 ## 🛠️ Các Measure DAX chính
+
+---
+
 Customer Count = COUNTROWS(Data)
 
 Churn Count =
@@ -192,6 +216,8 @@ DIVIDE(
 
 Average Tenure = AVERAGE(Data[tenure])
 
+---
+
 ## 📁 Cấu trúc thư mục
 ├── powerbi/
 │   └── Telco_Customer_Churn.pbix
@@ -203,25 +229,31 @@ Average Tenure = AVERAGE(Data[tenure])
 └── documents/
     └── Telco_Customer_Churn_Report.docx
 
+---
+
 ## 🔮 Hướng phát triển
 
-Thêm Machine Learning dự đoán Churn
+Thêm **Machine Learning** dự đoán **Churn**
 
-Kết nối SQL Database thay vì import CSV
+Kết nối **SQL Database** thay vì import CSV
 
 Tự động refresh dữ liệu
 
-Thêm trang Recommendation – gợi ý giữ khách hàng
+Thêm trang **Recommendation** – gợi ý giữ khách hàng
 
-Publish lên Power BI Service cho phép chia sẻ online
+**Publish** lên **Power BI Service** cho phép chia sẻ online
+
+---
 
 ## 👨‍💻 Tác giả
 
-Họ tên: Võ Văn Minh Trí
+Họ tên: **Võ Văn Minh Trí**
 
-Email: vovanminhtri2002@gmail.com
+Email: **vovanminhtri2002@gmail.com**
 
-Công cụ: Power BI, Power Query, DAX
+Công cụ: **Power BI, Power Query, DAX**
+
+---
 
 ## 📜 License
 
