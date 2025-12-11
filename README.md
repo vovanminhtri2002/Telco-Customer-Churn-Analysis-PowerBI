@@ -37,7 +37,7 @@ Theo dõi KPI tổng quan
 
 Tìm insight theo độ tuổi, giới tính, hợp đồng, phương thức thanh toán,...
 
-📌 Mục tiêu dự án
+## 📌 Mục tiêu dự án
 
 Tính toán tỷ lệ churn tổng & theo từng phân khúc
 
@@ -49,7 +49,7 @@ Tạo dashboard 4 trang đầy đủ thông tin
 
 Trình bày báo cáo theo chuẩn BI
 
-📂 Nguồn dữ liệu
+## 📂 Nguồn dữ liệu
 
 Dataset: Telco Customer Churn
 
@@ -59,7 +59,7 @@ Nguồn: Kaggle
 
 Gồm 7043 dòng – 21 cột thông tin khách hàng
 
-🧠 Quy trình thực hiện
+## 🧠 Quy trình thực hiện
 
 Làm sạch dữ liệu trong Power Query
 
@@ -87,8 +87,8 @@ Thêm Tooltip, Slicer, Card KPI
 
 Xuất file (.pbix) và lưu repository
 
-📊 Tổng quan Dashboard
-1️⃣ Home
+## 📊 Tổng quan Dashboard
+## 1️⃣ Home
 
 Trang mở đầu bao gồm:
 
@@ -100,11 +100,11 @@ Mô tả dataset
 
 Nút điều hướng sang 3 trang tiếp theo
 
-2️⃣ Overview Dashboard
+## 2️⃣ Overview Dashboard
 
 Trang tổng quan KPI:
 
-📌 KPI chính (4 Card):
+### 📌 KPI chính (4 Card):
 
 Churn Rate
 
@@ -116,7 +116,7 @@ Dependent %
 
 Average Tenure
 
-📌 Biểu đồ:
+### 📌 Biểu đồ:
 
 Churn by Gender
 
@@ -128,7 +128,7 @@ Churn by MonthlyCharges
 
 Trang này giúp đánh giá tổng quan rủi ro rời bỏ khách hàng.
 
-3️⃣ Service Analysis
+## 3️⃣ Service Analysis
 
 Phân tích sâu các dịch vụ:
 
@@ -142,7 +142,7 @@ Payment Method
 
 Giúp tìm ra dịch vụ làm khách hàng rời bỏ nhiều nhất.
 
-4️⃣ Customer Insights
+## 4️⃣ Customer Insights
 
 Phân tích hành vi khách hàng:
 
@@ -166,7 +166,7 @@ Internet Service
 
 Giúp đưa ra gợi ý chiến lược giữ chân khách hàng.
 
-🛠️ Các Measure DAX chính
+## 🛠️ Các Measure DAX chính
 Customer Count = COUNTROWS(Data)
 
 Churn Count =
@@ -192,7 +192,7 @@ DIVIDE(
 
 Average Tenure = AVERAGE(Data[tenure])
 
-📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục
 ├── powerbi/
 │   └── Telco_Customer_Churn.pbix
 ├── data/
@@ -203,7 +203,7 @@ Average Tenure = AVERAGE(Data[tenure])
 └── documents/
     └── Telco_Customer_Churn_Report.docx
 
-🔮 Hướng phát triển
+## 🔮 Hướng phát triển
 
 Thêm Machine Learning dự đoán Churn
 
@@ -215,7 +215,7 @@ Thêm trang Recommendation – gợi ý giữ khách hàng
 
 Publish lên Power BI Service cho phép chia sẻ online
 
-👨‍💻 Tác giả
+## 👨‍💻 Tác giả
 
 Họ tên: Võ Văn Minh Trí
 
@@ -223,6 +223,6 @@ Email: vovanminhtri2002@gmail.com
 
 Công cụ: Power BI, Power Query, DAX
 
-📜 License
+## 📜 License
 
 MIT License © 2025
