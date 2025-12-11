@@ -22,7 +22,7 @@
 - [3️⃣ Service Analysis](#3️⃣-service-analysis)
 - [4️⃣ Customer Insights](#4️⃣-customer-insights)
 - [💡 Insight nổi bật](#-insight-nổi-bật)
-- [🛠️ Công nghệ sử dụng](#-công-nghệ-sử-dụng)  
+- [⚙️Công nghệ sử dụng](#công-nghệ-sử-dụng)  
 - [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [🔮 Hướng phát triển](#-hướng-phát-triển)
 - [👨‍💻 Tác giả](#-tác-giả)
@@ -282,7 +282,7 @@ Slicer tùy chọn:
 
 ---
 
-## 🛠️ Công nghệ sử dụng
+## 🛠️Công nghệ sử dụng
 
 ```bash
 Customer Count = COUNTROWS(Data)
