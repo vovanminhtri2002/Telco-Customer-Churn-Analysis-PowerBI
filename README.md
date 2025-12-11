@@ -152,6 +152,12 @@ Trang tổng quan KPI:
 
 Trang này giúp đánh giá tổng quan rủi ro rời bỏ khách hàng.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5ac3b475-1c17-4e4f-8ce8-f155f8ba7f11"
+       alt="Overview_Dashboard"
+       width="800">
+</p>
+
 ---
 
 ## 3️⃣ Service Analysis
@@ -167,6 +173,12 @@ Phân tích sâu các dịch vụ:
 **Payment Method**
 
 Giúp tìm ra dịch vụ làm khách hàng rời bỏ nhiều nhất.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/81ac8ad2-3dfa-49a7-84c8-867b8ec1d598"
+       alt="Service_Analysis"
+       width="800">
+</p>
 
 ---
 
@@ -193,6 +205,12 @@ Slicer lọc theo:
 **Internet Service**
 
 Giúp đưa ra gợi ý chiến lược giữ chân khách hàng.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f3fd75c0-128c-4c41-869c-a96422cf066c"
+       alt="Customer_Insights"
+       width="800">
+</p>
 
 ---
 
