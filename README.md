@@ -21,6 +21,7 @@
 - [2️⃣ Overview Dashboard](#2️⃣-overview-dashboard)
 - [3️⃣ Service Analysis](#3️⃣-service-analysis)
 - [4️⃣ Customer Insights](#4️⃣-customer-insights)
+- [💡 Insight nổi bật](#💡-insight-nổi-bật)
 - [🛠️ Các Measure DAX chính](#-các-measure-dax-chính)
 - [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [🔮 Hướng phát triển](#-hướng-phát-triển)
@@ -31,91 +32,114 @@
 
 ## ✨ Giới thiệu
 
-Dự án Telco Customer Churn Analysis phân tích hiện tượng khách hàng rời bỏ (Churn) dựa trên dữ liệu viễn thông từ Kaggle.
-Sử dụng Power BI để tạo dashboard trực quan, hỗ trợ doanh nghiệp:
+Dự án **Telco Customer Churn Analysis** được xây dựng bằng **Microsoft Power BI**, tập trung phân tích hành vi rời bỏ (**Churn**) của khách hàng ngành viễn thông.
 
-Phát hiện nhóm khách hàng có nguy cơ rời bỏ cao
+Báo cáo giúp doanh nghiệp **trả lời 5 câu hỏi sống còn**:
 
-Hiểu dịch vụ nào đang khiến khách hàng không hài lòng
+**1. Ai đang rời bỏ?** (Chân dung khách hàng churn)
 
-Theo dõi KPI vận hành – dịch vụ – khách hàng
+**2. Tại sao họ rời bỏ?** (Dịch vụ, chi phí, hợp đồng…)
 
-Đưa ra chiến lược giữ chân & tối ưu doanh thu
+**3. Dịch vụ nào gây rủi ro nhiều nhất?**
 
-Dashboard được chia thành 4 trang với luồng phân tích logic từ tổng quan → nguyên nhân → hành vi.
+**4. Nhóm khách hàng nào cần ưu tiên giữ chân?**
+
+**5. Chiến lược nào giảm churn hiệu quả nhất?**
+
+**Dashboard** gồm **4 trang chuẩn BI**, thiết kế theo hướng:
+👉 _Insight-driven – Business-focused – Actionable KPIs_
 
 ---
 
 ## 📌 Mục tiêu dự án
 
-Xác định tỷ lệ churn tổng và theo từng phân khúc khách hàng
+- Tính toán **tỷ lệ Churn** tổng & theo từng phân khúc
 
-Phân tích yếu tố ảnh hưởng mạnh nhất đến churn (Contract, Internet Service, Payment…)
+- Xác định **chân dung khách hàng rời bỏ**
 
-Xây dựng hệ thống KPI bằng DAX Measure
+- Tìm nguyên nhân chính ảnh hưởng đến churn
 
-Thiết kế báo cáo đúng chuẩn BI, đầy đủ insight và có khả năng hỗ trợ quyết định kinh doanh
+- Xây dựng **Dashboard gồm 4 trang chuyên nghiệp**
 
-Tạo dashboard 4 trang trực quan, giúp doanh nghiệp hiểu khách hàng nhanh chóng
+- Sử dụng **DAX** để tính KPI mang tính hành động
+
+- Trình bày báo cáo theo chuẩn **Business Intelligence**
 
 ---
 
 ## 📂 Nguồn dữ liệu
 
-Dataset: Telco Customer Churn
-📄 Link: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+- Dataset: **Telco Customer Churn – Kaggle**
 
-Định dạng: CSV
+- Link: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
-Số dòng: 7043
+- Dữ liệu gồm:
 
-Số cột: 21
+  - **7043 khách hàng**
 
-Bao gồm thông tin:
+  - **21 biến thông tin**
 
-Loại hợp đồng
+  - Định dạng: **CSV**
 
-Loại dịch vụ Internet
+Chủ yếu gồm các trường:
 
-Phương thức thanh toán
+- Nhân khẩu học (**Gender, SeniorCitizen, Partner, Dependents**)
 
-Tổng phí hàng tháng & tổng phí tích lũy
+- Thông tin dịch vụ (**InternetService, Security, Backup...**)
 
-Giới tính, độ tuổi, tình trạng hôn nhân
+- Chi phí (**MonthlyCharges, TotalCharges**)
 
-Nhãn mục tiêu: Churn (Yes/No)
+- Hợp đồng & thanh toán (**Contract, PaymentMethod**)
+
+-  Mục tiêu: **Churn (Yes/No)**
 
 ---
 
 ## 🧠 Quy trình thực hiện
 
-1. Làm sạch dữ liệu (Power Query)
+🔧 **1. Làm sạch dữ liệu – Power Query**
 
-Xử lý null
+- Xử lý giá trị null
 
-Chuẩn hóa format dữ liệu
+- Loại dòng lỗi
 
-Chuyển TotalCharges → số (numeric)
+- Chuyển đổi kiểu dữ liệu chính xác
 
-Loại bỏ các dòng lỗi / ký tự không hợp lệ
+- Convert TotalCharges → Decimal Number
 
-2. Xây dựng Measure DAX
+- Tạo cột phân loại tuổi, phân khúc tenure
 
-KPI về churn
+🔨 **2. Tạo các DAX Measure**
 
-KPI nhóm khách hàng đặc biệt: Partner, Senior Citizen, Dependents
+- Churn Rate
 
-Thống kê tenure, chi phí, phân bổ dịch vụ
+- Senior Citizen Count
 
-3. Thiết kế Dashboard (4 trang)
+- Average Tenure
 
-Dùng Card KPI, Bar Chart, Donut, Line Chart
+- Partner %
 
-Thêm Tooltip + Slicer điều khiển
+- Dependent %
 
-Tạo navigation trực quan giữa các trang
+- Tổng số khách hàng
 
-4. Xuất file & publish lên GitHub
+- Churn theo dịch vụ / phân khúc
+
+🎨 **3. Thiết kế Dashboard**
+
+- Card KPI
+
+- Bar chart, donut chart, line chart
+
+- Slicer lọc động theo giới tính, hợp đồng, internet service
+
+- Tooltip custom
+
+📤 **4. Xuất file & quản lý repo**
+
+- Lưu file .pbix
+
+- Tách thư mục images, data, documents
 
 ---
 
@@ -123,22 +147,20 @@ Tạo navigation trực quan giữa các trang
 
 Dashboard được chia thành 4 trang:
 
-1️⃣ Home – Trang giới thiệu và điều hướng
-2️⃣ Overview Dashboard – KPI & rủi ro tổng quan
-3️⃣ Service Analysis – Phân tích theo dịch vụ sử dụng
-4️⃣ Customer Insights – Hành vi & phân khúc khách hàng
+1️⃣ **Home** – Trang giới thiệu và điều hướng
+2️⃣ **Overview Dashboard** – KPI & rủi ro tổng quan
+3️⃣ **Service Analysis** – Phân tích theo dịch vụ sử dụng
+4️⃣ **Customer Insights** – Hành vi & phân khúc khách hàng
 
 ## 1️⃣ Home
 
 Trang mở đầu gồm:
 
-Logo dự án
+- Tên dự án
 
-Mô tả dataset
+- Mô tả dữ liệu
 
-Nút điều hướng → 3 trang còn lại
-
-Tóm tắt các mục phân tích
+- Call-to-action dẫn đến các trang phân tích
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/94acfbbc-9368-4333-88ee-17d235e9ae98" 
@@ -150,29 +172,29 @@ Tóm tắt các mục phân tích
 
 ## 2️⃣ Overview Dashboard
 
-Trang quan trọng nhất: cung cấp cái nhìn tổng quan về rủi ro churn.
+📌 **KPI chính:**
 
-📌 KPI chính gồm:
+- **Churn Rate**
 
-Churn Rate
+- **Senior Citizen Count**
 
-Senior Citizen Count
+- **Partner %**
 
-Partner %
+- **Dependent %**
 
-Dependent %
+- **Average Tenure**
 
-Average Tenure
+📌 **Biểu đồ:**
 
-📌 Biểu đồ Insight:
+- **Churn by Gender**
 
-Churn theo giới tính
+- **Churn by Contract**
 
-Churn theo loại hợp đồng → Hop̀ đồng Month-to-Month là nhóm rủi ro cao nhất
+- **Churn by Senior Citizen**
 
-Churn theo Senior Citizen → Người lớn tuổi có tỷ lệ rời bỏ cao hơn
+- **Churn by MonthlyCharges**
 
-MonthlyCharges vs Churn → Chi phí cao → churn nhiều
+Trang này giúp xác định **bức tranh tổng quan về rủi ro churn.**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5ac3b475-1c17-4e4f-8ce8-f155f8ba7f11"
@@ -184,25 +206,17 @@ MonthlyCharges vs Churn → Chi phí cao → churn nhiều
 
 ## 3️⃣ Service Analysis
 
-Trang này tập trung vào dịch vụ mà khách hàng đang dùng.
+Phân tích **tác động của dịch vụ** lên churn:
 
-Bao gồm phân tích:
+- **Internet Service vs Churn**
 
-Internet Service vs Churn
+- **Online Security / Backup**
 
-OnlineSecurity / Backup / Device Protection
+- **Device Protection**
 
-Contract Type
+- **Contract Type**
 
-Payment Method
-
-Insight:
-
-Khách hàng dùng Fiber Optic có tỷ lệ churn cao hơn DSL
-
-Những khách hàng không dùng OnlineSecurity rời bỏ nhiều hơn
-
-Payment bằng Electronic Check là nhóm churn cao nhất
+- **Payment Method**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/81ac8ad2-3dfa-49a7-84c8-867b8ec1d598"
@@ -214,31 +228,55 @@ Payment bằng Electronic Check là nhóm churn cao nhất
 
 ## 4️⃣ Customer Insights
 
-Trang cuối tập trung hiểu hành vi khách hàng:
+Tập trung vào **hành vi & vòng đời khách hàng:**
 
-Tenure vs Churn → Khách mới (tenure thấp) dễ rời bỏ nhất
+- **Tenure vs Churn**
 
-Age Group
+- **Age Group**
 
-Monthly Charges
+- **Monthly Charges**
 
-CLV (Customer Lifetime Value)
+- **Customer Lifetime Value (CLV)**
 
-Slicer mạnh giúp phân tích theo:
+Slicer tùy chọn:
 
-Contract
+- **Contract**
 
-Gender
+- **Gender**
 
-Payment Method
+- **Payment Method**
 
-Internet Service
+- **Internet Service**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f3fd75c0-128c-4c41-869c-a96422cf066c"
        alt="Customer_Insights"
        width="800">
 </p>
+
+---
+
+## 💡 Insight nổi bật
+
+🔥 **1. Khách hàng dùng hợp đồng tháng có tỷ lệ churn cao gấp ~3 lần so với hợp đồng 1–2 năm.**
+
+➡️ _Gợi ý:_ Tập trung upsell sang hợp đồng dài hạn.
+
+🔥 **2. Nhóm Senior Citizen có khả năng churn cao hơn đáng kể.**
+
+➡️ _Gợi ý:_ Xây gói hỗ trợ hoặc khuyến mãi riêng.
+
+🔥 **3. Khách hàng có Monthly Charges cao (> 80$) rời bỏ nhiều hơn.**
+
+➡️ _Gợi ý:_ Đề xuất bundle service để giảm chi phí cảm nhận.
+
+🔥 **4. Dịch vụ Online Security và Backup có mức churn cao khi khách hàng Không sử dụng.**
+
+➡️ _Gợi ý:_ Giới thiệu dịch vụ bảo mật như giá trị gia tăng.
+
+🔥 **5. Tenure < 12 tháng → nhóm có rủi ro cao nhất.**
+
+➡️ _Gợi ý:_ Chương trình welcome/retention 90 ngày đầu.
 
 ---
 
@@ -303,13 +341,17 @@ Average Tenure = AVERAGE(Data[tenure])
 
 ## 🔮 Hướng phát triển
 
-Tích hợp Machine Learning dự đoán khả năng churn
+Tích hợp **Machine Learning** → dự đoán khách hàng churn
 
-Kết nối SQL Server / Azure / BigQuery để tự động refresh dữ liệu
+Kết nối **SQL Database**
 
-Thêm trang Recommendation System – gợi ý giữ chân khách hàng
+**Auto-refresh** dữ liệu
 
-Publish lên Power BI Service và tạo dashboard real-time
+Trang **Recommendation Engine** sử dụng **AI**
+
+**Publish** lên **Power BI Service**
+
+Tạo **Dashboard Mobile View**
 
 ---
 
