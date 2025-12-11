@@ -17,11 +17,11 @@
 - [📂 Nguồn dữ liệu](#-nguồn-dữ-liệu)
 - [🧠 Quy trình thực hiện](#-quy-trình-thực-hiện)
 - [📊 Tổng quan Dashboard](#-tổng-quan-dashboard)
-- [1️⃣ Home](#1️⃣-home)
-- [2️⃣ Overview Dashboard](#2️⃣-overview-dashboard)
-- [3️⃣ Service Analysis](#3️⃣-service-analysis)
-- [4️⃣ Customer Insights](#4️⃣-customer-insights)
-- [💡 Insight nổi bật](#💡-insight-nổi-bật)
+- [1️⃣ Home](#-home)
+- [2️⃣ Overview Dashboard](#-overview-dashboard)
+- [3️⃣ Service Analysis](#-service-analysis)
+- [4️⃣ Customer Insights](#-customer-insights)
+- [💡 Insight nổi bật](#-insight-nổi-bật)
 - [🛠️ Các Measure DAX chính](#-các-measure-dax-chính)
 - [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [🔮 Hướng phát triển](#-hướng-phát-triển)
@@ -147,10 +147,12 @@ Chủ yếu gồm các trường:
 
 Dashboard được chia thành 4 trang:
 
+```bash
 1️⃣ **Home** – Trang giới thiệu và điều hướng
 2️⃣ **Overview Dashboard** – KPI & rủi ro tổng quan
 3️⃣ **Service Analysis** – Phân tích theo dịch vụ sử dụng
 4️⃣ **Customer Insights** – Hành vi & phân khúc khách hàng
+```
 
 ## 1️⃣ Home
 
