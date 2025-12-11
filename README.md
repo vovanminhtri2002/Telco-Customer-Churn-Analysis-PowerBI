@@ -1,6 +1,7 @@
-📊 Telco Customer Churn Analysis – Power BI Dashboard
+# 📊 Telco Customer Churn Analysis – Power BI Dashboard
 <p align="center"> <img src="https://img.shields.io/badge/PowerBI-Analytics-orange?logo=powerbi"> <img src="https://img.shields.io/badge/Status-Completed-success"> <img src="https://img.shields.io/badge/Data-Kaggle-blue?logo=kaggle"> <img src="https://img.shields.io/badge/Visualization-DAX%20%26%20PowerQuery-green"> </p>
-📖 Mục lục
+
+## 📖 Mục lục
 
 ✨ Giới thiệu
 
