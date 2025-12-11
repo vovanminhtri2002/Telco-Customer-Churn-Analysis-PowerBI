@@ -6,7 +6,7 @@
 
 ## 📖 Mục lục
 
-- [✨ Giới thiệu](#-giới-thiệu)
+- [✨ Giới thiệu](#-giới-thiệu)  
 - [📌 Mục tiêu dự án](#-mục-tiêu-dự-án)
 - [📂 Nguồn dữ liệu](#-nguồn-dữ-liệu)
 - [🧠 Quy trình thực hiện](#-quy-trình-thực-hiện)
@@ -23,7 +23,7 @@
 
 ---
 
-✨ Giới thiệu
+## ✨ Giới thiệu
 
 Dự án Telco Customer Churn Analysis sử dụng Microsoft Power BI để phân tích hành vi khách hàng rời bỏ (Churn) của một công ty viễn thông.
 
