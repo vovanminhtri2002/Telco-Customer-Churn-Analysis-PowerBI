@@ -142,8 +142,6 @@ Trang tổng quan KPI:
 
 **Average Tenure**
 
----
-
 ### 📌 Biểu đồ:
 
 **Churn by Gender**
