@@ -114,13 +114,13 @@ Mô tả dataset
 
 Nút điều hướng sang 3 trang tiếp theo
 
+<img width="628" height="355" alt="Home_Dashboard" src="https://github.com/user-attachments/assets/94acfbbc-9368-4333-88ee-17d235e9ae98" />
+
 ---
 
 ## 2️⃣ Overview Dashboard
 
 Trang tổng quan KPI:
-
----
 
 ### 📌 KPI chính (4 Card):
 
@@ -134,9 +134,9 @@ Trang tổng quan KPI:
 
 **Average Tenure**
 
-### 📌 Biểu đồ:
-
 ---
+
+### 📌 Biểu đồ:
 
 **Churn by Gender**
 
@@ -148,9 +148,9 @@ Trang tổng quan KPI:
 
 Trang này giúp đánh giá tổng quan rủi ro rời bỏ khách hàng.
 
-## 3️⃣ Service Analysis
-
 ---
+
+## 3️⃣ Service Analysis
 
 Phân tích sâu các dịch vụ:
 
@@ -190,9 +190,9 @@ Slicer lọc theo:
 
 Giúp đưa ra gợi ý chiến lược giữ chân khách hàng.
 
-## 🛠️ Các Measure DAX chính
-
 ---
+
+## 🛠️ Các Measure DAX chính
 
 ```bash
 Customer Count = COUNTROWS(Data)
@@ -235,8 +235,9 @@ Average Tenure = AVERAGE(Data[tenure])
 
 ---
 
-```bash
 ## 📁 Cấu trúc thư mục
+
+```bash
 ├── powerbi/
 │   └── Telco_Customer_Churn.pbix
 ├── data/
@@ -279,3 +280,5 @@ Công cụ: **Power BI, Power Query, DAX**
 ---
 
 MIT License © 2025
+
+---
