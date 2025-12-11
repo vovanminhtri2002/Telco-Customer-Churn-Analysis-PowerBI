@@ -282,7 +282,7 @@ Slicer tùy chọn:
 
 ---
 
-## 🛠️Công nghệ sử dụng
+## 🛠️ Công nghệ sử dụng
 
 ```bash
 Customer Count = COUNTROWS(Data)
