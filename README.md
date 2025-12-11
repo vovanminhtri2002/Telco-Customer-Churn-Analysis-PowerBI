@@ -25,7 +25,7 @@
 
 ## ✨ Giới thiệu
 
-Dự án Telco Customer Churn Analysis sử dụng Microsoft Power BI để phân tích hành vi khách hàng rời bỏ (Churn) của một công ty viễn thông.
+Dự án **Telco Customer Churn Analysis** sử dụng **Microsoft Power BI** để phân tích hành vi khách hàng rời bỏ (**Churn**) của một công ty viễn thông.
 
 Dashboard được thiết kế theo hướng trực quan – logic – dễ đưa ra quyết định, hỗ trợ doanh nghiệp:
 
